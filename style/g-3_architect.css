@@ -137,7 +137,61 @@ main > section{
     letter-spacing: 0%;
     text-align: left;
 }
-
+/* facts */
+.fact-title{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.facts-des{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.fact-card{
+    /* box-sizing: border-box; */
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fact-num{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0%;
+    /* text-align: left; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    /* text-align: left; */
+}
 /* media query */
 @media screen  and (max-width:576px){
     .navbar , .nav-links, .teams{
