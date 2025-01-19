@@ -192,21 +192,52 @@ main > section{
     margin-top: 10px;
     /* text-align: left; */
 }
+/* sponsor */
+.sponsors-info{
+    max-width: 550px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-com{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsors-com img{
+    filter: grayscale(100%);
+}
 /* media query */
 @media screen  and (max-width:576px){
     .navbar , .nav-links, .teams{
         flex-direction: column;
     }
-    .item-img-container{
+    .item-img-container, .sponsors-com{
         grid-template-columns: repeat(1,1fr);
     }
     .our-features{
         margin-left: 20px;
     }
+    .facts-container, .sponsors-com{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 24px;
+    }
 }
+
+
 /* medium devices */
 @media screen and (min-width:577px) and (max-width:990px){
     .teams{
         flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+    .sponsors-com{
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
     }
 }
