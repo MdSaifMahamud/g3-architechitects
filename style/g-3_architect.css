@@ -205,6 +205,97 @@ main > section{
 .sponsors-com img{
     filter: grayscale(100%);
 }
+/* feature */
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.fetc-title{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.fetch-des{
+    color: rgb(114, 114, 114);
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    border-radius: 8px;
+}
+.feature-card .freature-card-title{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+.feature-card-des{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.freatures{
+    display: flex;
+    gap: 140px;
+}
+
+#exp-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.freatures-archi img{
+    width: 100%;
+}
+/* footer */
+.footer-des{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.footer{
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    /* max-width: x; */
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
 /* media query */
 @media screen  and (max-width:576px){
     .navbar , .nav-links, .teams{
@@ -221,12 +312,17 @@ main > section{
         justify-items: center;
         gap: 24px;
     }
+    #exp-badge{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
 
 
 /* medium devices */
 @media screen and (min-width:577px) and (max-width:990px){
-    .teams{
+    .teams, .freatures{
         flex-direction: column;
     }
     .our-features{
@@ -239,5 +335,9 @@ main > section{
     .facts-container{
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
+    }
+    #exp-badge{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
